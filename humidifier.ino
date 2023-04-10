@@ -79,7 +79,7 @@ void loop() {
   Serial.println("Humidity: " + String(hum) + "%\n");
   //Runs humidifier heating elemnt and state led
   //when suboptimal humidity is observed and 
-  if (temp < 103 && hum < 60){
+  if (temp < 165 && hum < 60){
     digitalWrite(RELAY_SIGNAL, HIGH);
     digitalWrite(LED_SIGNAL, HIGH);
   }
